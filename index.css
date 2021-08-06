@@ -48,11 +48,11 @@ nav {
     z-index: 100;
 } 
 
-.container-site {
+/*.container-site {
     width: 90%;
     margin: auto;
     box-shadow: 1px 1px 10px black;   
-}
+}*/
 
 .section {
     padding: 4em 2em 0;
@@ -126,6 +126,7 @@ nav {
     color: var(--text-grey);
     font-size: 1.7em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .text {
