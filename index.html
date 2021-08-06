@@ -11,23 +11,47 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap" rel="stylesheet">
-
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/7ab9ac0ce2.js" crossorigin="anonymous"></script>	
 </head>
 
 <body>
 	<header>
 		<nav id="nav-mobile" class="">
-			<a class="home" href="#index" alt="home">				
-				<div class="big-title"> logo </div>
+			<a class="home" href="#index"  alt="home">
+				<img id="logo-nav" src="images/hs-logo.svg" alt="back home">
 			</a>
-
-			<div id="menu-burger"> 
+			<div id="btn-burger"> 
 				<div class="burger-line"></div>
 				<div class="burger-line"></div>
 				<div class="burger-line"></div>
-			</div>			
-		</nav>				
+			</div>
+			<!-- <div id="btn-close-menu"> 
+				<div class="burger-line close"></div>
+				<div class="burger-line close"></div>
+				<div class="burger-line close"></div>				
+			</div> -->	
+		</nav>
+		<aside id="aside-menu" class="hide">
+			<ul id="menu-mobile">
+				<li class="link-nav"><a href="#formation"> formation </a></li>
+				<li class="link-nav"><a href="#experiences"> expériences </a></li>	
+				<li class="link-nav"><a href="#competences"> compétences </a></li>
+				<li class="link-nav"><a href="#contact"> contact </a></li>
+				<li class="separate-link"></li>
+				<li class="container-social">
+					<a href="https://github.com/hamidousow" class="item fb-item">
+						<img src="" alt="github">
+					</a>
+					<a href="" class="item insta-item">
+						<img src="" alt="twitter">
+					</a>
+					<a href="https://www.instagram.com/besowdesign" class="item linkedin-item" id="linkedin">
+						<img src="" alt="instagram">
+					</a>		
+				</li>
+			</ul>
+		</aside>				
 	</header>
 	<main>
 		<div class="container-site">		
@@ -45,7 +69,7 @@
 				</div>
 				<span class="call-to-action"> scroll </span>			
 			</section>
-			<section class="section introduction">
+			<section id="a-propos" class="section introduction">
 				<div class="container-paragraphe">			
 					<h2 class="title-section"> web-design / front-end </h2>									
 					<p class="text">30 ans</p>				
@@ -56,10 +80,9 @@
 						Mon expérience dans le web design est un plus afin de faciliter la communication entre les designers 
 						et les développeurs.
 					</p>				
-				</div>
-				
+				</div>				
 			</section>
-			<section class="section section-formation">
+			<section id="formations" class="section section-formation">
 				<div class="formation">
 					<h2 class="title-section"> formation </h2>	
 					<div class="container-paragraphe">
@@ -93,6 +116,8 @@
 						</div>		
 					</div>				
 				</div>
+		    </section>
+			<section id="experiences" class="section section-experience">		
 				<div class="experiences">
 					<h2 class="title-section"> expériences </h2>	
 					<div class="container-paragraphe">
@@ -127,7 +152,7 @@
 					</div>				
 				</div>	
 			</section>			
-			<section class="section section-compétences">
+			<section id="competences" class="section section-competences">
 				<h2 class="title-section"> compétences </h2>
 				<div class="skills-grid">
 					<div class="skill">
@@ -155,20 +180,18 @@
 						<p class="text text-grid">html / css</p>
 					</div>
 				</div>			
-			</section>
-			<section class="section section-contact">
-				<h2 class="title-section"> contact </h2>
-				<p class="text text-contact">Hamidou SOW</p>
-				<p class="text text-contact">hamidou.sow@hotmail.fr</p>	
-				<div class="social">
-					<item class="social-icon"></item>
-					<item class="social-icon"></item>
-				</div>					
-			</section>
+			</section>			
 		</div>
-		
 	</main>	
-	<footer></footer>		
+	<footer>
+		<div class="container-social">
+			<a class="social-item" href="https://github.com/hamidousow"><i class="fab fa-github"></i></a>
+			<a class="social-item" href="#"><i class="fab fa-twitter"></i></a>
+			<a class="social-item" href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+		<p class="small-text">blablabla</p>
+	</footer>
+	<script src="index.js"></script>		
 	<noscript>Ce navigateur ne supporte pas Javascript!</noscript>	
 </body>
 </html>
