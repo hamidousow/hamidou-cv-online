@@ -23,10 +23,24 @@
     --box-shadow:  1px 1px 10px #0c0c0c34; 
 }
 
-* {	
+* {
+    box-sizing: border-box;
+}
+
+body {	
     background: #080808;
     color: #dddddd;
     font-family: 'Roboto', sans-serif;	
+}
+
+.dark-mode {
+    background: #080808;
+    color: #dddddd;
+}
+
+.light-mode {
+    background: #dddddd;
+    color: #080808;
 }
 
 body a { 
@@ -41,15 +55,21 @@ body a {
     font-size: var(--small-text);
 }
 
+.container-site {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 header {
     position: relative;
 }
 
-#nav-mobile {
-    background: var(--bg-black);
+#nav-mobile {  
+    box-sizing: border-box; 
     padding: 1em;
     position: fixed;
-    width: 92%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,13 +106,6 @@ header {
     cursor: pointer; 
     position: absolute;
     right: 0;   
-}
-
-.cross {
-    height: 2px;
-    width: 35px;
-    background: var(--bg-grey);
-    transform: rotate(30deg);
 }
 
 /* aside menu */ 
@@ -212,12 +225,13 @@ header {
     right: 0;
 }
 
-.section-intro {
+.section-hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90vh;  
     position: relative; 
+    box-shadow: 0 1px 10px #000000;
 }
 
 .left {
@@ -294,7 +308,7 @@ h2 {
 /* compétences */
 
 .section-competences {
-    height: 90vh;
+    height: 60vh;
     flex-direction: column;
 }
 
@@ -303,6 +317,7 @@ h2 {
     grid-template-columns: 40% 40% ;
     gap: 50px;
     justify-content: space-between;
+    margin-top: 3em;
 }
 
 .container-item-skill {
@@ -310,12 +325,11 @@ h2 {
     width: 100%;
 }
 
-.skill-img {
-    display: block;
-    width: auto;
-    height: 70px;
-    margin: auto;
-    margin-bottom: 1.5em;
+.skill-icon {
+    display: flex !important;
+    font-size: 2em;
+    justify-content: center;
+    margin-bottom: .5em;    
 }
 
 .text-grid {
@@ -324,6 +338,11 @@ h2 {
 }
 
 /* contact */ 
+
+.section-contact {
+    flex-direction: column;
+    height: auto;
+}
 
 footer {
     padding: 4em 2em 1em;
@@ -340,6 +359,161 @@ footer .container-social {
     width: 50%;
     margin-bottom: 2em;
 }
+
+@media screen and (min-width: 568px) {
+    
+    #row-menu {
+        display: none;
+    }
+
+    #btn-burger {
+        display: flex;
+    }
+
+    .section {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em 2em 0;
+    }
+
+    .section-hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        height: 50vh;       
+    }
+
+    .section-introduction {
+        height: 50vh;
+    }
+
+    .section-hero .left {
+        /* height: 30vh; */        
+        width: 50%;
+        height: auto;
+    }
+
+    .section-hero .right {
+        width: 50%;
+        height: auto;
+    }    
+
+    .call-to-action {
+       display: none;
+    }
+
+    .section-formation .container-paragraphe, .section-experience .container-paragraphe {
+        margin-bottom: 2em;
+    }
+
+    .text {
+        font-size: 1.1em;
+        line-height: 27px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #nav-mobile {
+        padding: 2em;
+    }
+
+    #btn-burger {
+        display: none;
+    }
+
+    #menu-desktop {
+        display: flex;
+    }
+
+    .link-nav a {
+        margin-right: 50px;
+        font-weight: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--text-grey);
+        font-size: 1em;
+        letter-spacing: 3px;
+        /*display: block;*/
+    }
+
+    .section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em 2em 0;
+    }
+
+    .section-hero {
+        flex-direction: row;
+    }
+
+    .big-title {       
+        font-size: 5.1vw;
+        line-height: 1.3em;        
+    } 
+
+    .profil-picture {
+        right: -2em;
+    }
+
+    .section-introduction .container-paragraphe {
+        width: 55%;
+    } 
+    
+    #flex-formation-exp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .formation {
+        margin-bottom: 0;
+    }
+
+    .section-formation, .section-experience {
+        justify-content: unset;
+        height: auto;
+    }
+
+    .section-competences, .section-contact {
+        height: 50vh;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 90px;           
+    }
+
+    .skill {
+        width: 150px;
+    }
+
+    footer {
+        height: 20vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section {        
+        padding: 3em 7em 0;
+    }
+
+    .profil-picture {
+        right: -7em;
+        min-width: 450px;
+        max-width: 550px;
+    }
+
+    .section-hero {
+        height: 100vh;
+    }
+}
+
+
 
 
 

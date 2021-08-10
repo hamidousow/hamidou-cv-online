@@ -1,6 +1,7 @@
 const btnBurger = document.querySelector('#btn-burger');
 const btnCloseBtnBurger = document.querySelector('#btn-close-menu')
 const asideMenu = document.querySelector('#aside-menu');
+const switchTheme = document.querySelector('#change-mode');
 
 btnBurger.addEventListener('click', () => {
     /*console.log('yes');*/   
@@ -17,3 +18,9 @@ btnBurger.addEventListener('click', () => {
     asideMenu.classList.remove('show');
     asideMenu.classList.add('hide');
 });*/
+
+switchTheme.addEventListener('click', () => {
+    console.log('yes');
+})
+
+
