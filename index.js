@@ -30,6 +30,10 @@ btnSwitchTheme.addEventListener('click', () => {
     body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 });
 
+// typing animation 
+
+
+
 
 
 
