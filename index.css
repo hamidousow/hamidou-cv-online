@@ -48,6 +48,16 @@ body a {
     color: var(--text-black);
 }
 
+.dark-mode #nav-mobile {
+    background: #080808;
+    box-shadow: var(--box-shadow);   
+}
+
+.light-mode #nav-mobile {
+    background: #dddddd;
+    box-shadow: var(--box-shadow);    
+}
+
 .dark-mode #logo-nav {    
     filter: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
@@ -131,6 +141,7 @@ body a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    transition: .5s;
 }
 
 header {
@@ -303,6 +314,7 @@ span.separate-link {
     text-transform: uppercase;
     letter-spacing: .5em;   
     width: fit-content;
+    color: var(--text-cyan);
 }
 
 .section-hero {
