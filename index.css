@@ -15,7 +15,7 @@
     --text-white: #ffffff;
     --text-orange: #f39200;
 
-    --title-section-size: .8em;
+    --title-section-size: 1.4em;
     --text-size: 13px;
     --small-text: 11px;
     --letter-space: letter-spacing: 10px;
@@ -226,7 +226,7 @@ header {
 /* main */
 
 .section {
-    height: 90vh;
+    height: auto;
     display: flex;
 }
 
@@ -238,38 +238,21 @@ header {
 }
 
 .title-section {
-    color: var(--text-orange);
+    color: var(--text-grey);
     font-size: var(--title-section-size);
+    font-weight: bold;
     position: relative;
-    padding: 0 10px;
+    padding: 10px 0;
     text-transform: uppercase;
-    letter-spacing: var(--letter-space);
+    letter-spacing: .5em;   
     width: fit-content;
-}
-
-.title-section::before {
-    content: "<";
-    display: block;
-    color: var(--bg-orange);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.title-section::after {
-    content: ">";
-    display: block;
-    color: var(--bg-orange);
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .section-hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;  
+    height: 100vh;  
     position: relative; 
     box-shadow: 0 1px 10px #000000;
 }
@@ -346,21 +329,28 @@ h2 {
 /* compétences */
 
 .section-competences {
-    height: 60vh;
+    /*height: 60vh;*/
     flex-direction: column;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: 40% 40% ;
-    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
     justify-content: space-between;
     margin-top: 3em;
+    flex-direction: row;
 }
 
-.container-item-skill {
-    /*height: 100%;*/
+.container-item-skill {   
     width: 100%;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    gap: 3em;      
+    margin-top: 3em;     
 }
 
 .skill-icon {
@@ -442,8 +432,21 @@ footer .container-social {
     }
 
     .text {
-        font-size: 1.1em;
+        font-size: 1.2em;
         line-height: 27px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);   
+        gap: 3em;      
+        margin-top: 3em;     
+    }
+    
+    footer .container-social {
+        width: 25%;
+        max-width: 200px;
+        margin-bottom: 2em;
     }
 }
 
@@ -490,18 +493,7 @@ footer .container-social {
 
     .section-competences, .section-contact {
         height: 50vh;
-    }
-
-    .skills-grid {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 90px;           
-    }
-
-    .skill {
-        width: 150px;
-    }
+    }    
 
     footer {
         height: 20vh;
