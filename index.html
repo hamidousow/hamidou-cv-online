@@ -20,25 +20,30 @@
 			<a class="home" href="#index"  alt="home">
 				<img id="logo-nav" src="images/hs-logo.svg" alt="back home">
 			</a>
-			<div id="btn-burger"> 
+			<div id="btn-burger" class="btn" style="display: flex;"> 
+				<div class="burger-line" ></div>
+				<div class="burger-line"></div>
+				<div class="burger-line"></div>
+			</div>
+			<div id="btn-close-menu" class="btn" style="display: none;"> 
 				<div class="burger-line"></div>
 				<div class="burger-line"></div>
 				<div class="burger-line"></div>
 			</div>
 			<ul id="menu-desktop">
-				<li class="link-nav"><a class="link-color" href="#formation"> formation </a></li>
+				<li class="link-nav"><a class="link-color" href="#formations"> formation </a></li>
 				<li class="link-nav"><a class="link-color" href="#experiences"> expérience </a></li>	
 				<li class="link-nav"><a class="link-color" href="#competences"> compétences </a></li>
 				<li><button type="button" id="btn-change-mode" class="dark-mode" name="dark-mode">changer mode</button></li>			
 			</ul>
 		</nav>
-		<aside id="aside-menu" class="hide">
+		<aside id="aside-menu">
 			<ul id="menu-mobile">
-				<li class="link-nav"><a class="link-color" href="#formation"> formation </a></li>
+				<li class="link-nav"><a class="link-color" href="#formations"> formation </a></li>
 				<li class="link-nav"><a class="link-color" href="#experiences"> expérience </a></li>	
 				<li class="link-nav"><a class="link-color" href="#competences"> compétences </a></li>
-				<li class="link-nav"><a class="link-color" href="#contact"> contact </a></li>
-				<li class="separate-link"></li>
+				<li><button type="button" id="btn-change-mode" class="dark-mode" name="dark-mode">changer mode</button></li>				
+				<span class="separate-link"></span>
 				<li class="container-social">
 					<a class="social-item" href="https://github.com/hamidousow"><i class="fab fa-github"></i></a>
 					<a class="social-item" href="#"><i class="fab fa-twitter"></i></a>
