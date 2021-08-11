@@ -14,6 +14,7 @@
     --text-black: #080808;
     --text-white: #ffffff;
     --text-orange: #f39200;
+    --text-cyan: #30b4dc;
 
     --title-section-size: 1.4em;
     --text-size: 13px;
@@ -102,11 +103,12 @@ body a {
 .dark-mode .social-item i {
     color: var(--text-grey);
 }
+
 .light-mode .social-item i {
     color: var(--text-black);
 }
 
-#btn-change-mode {
+.btn-change-mode {
     padding: 0.6em 1em;
     border: 1px solid #dddddd;
     background: transparent;
@@ -322,11 +324,20 @@ span.separate-link {
     height: 60vh;
 }
 
+/* typing text */ 
+
 .big-title {    
-    font-size: 1.7em;
+    font-size: 1.7rem;
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.typing {
+    overflow: hidden;
+    color: var(--text-cyan);
+}
+
+/* end typing text animation */
 
 .text {
     margin: .5em 0;
@@ -379,6 +390,8 @@ h2 {
 
 .text-italic {
     font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* compétences */
@@ -562,15 +575,19 @@ footer .container-social {
         padding: 2em;
     }
 
-    #btn-burger {
-        display: none;
+    #btn-burger, #btn-close-menu {
+        display: none !important;        
     }
 
     #menu-desktop {
         display: flex;
         flex-direction: row;
         align-items: center;
-    }   
+    } 
+    
+    #aside-menu {
+        display: none;
+    }
 
     .link-nav a {
         margin-right: 50px;
@@ -588,6 +605,7 @@ footer .container-social {
         border-radius: 30px;
         letter-spacing: 2px;
         cursor: pointer;
+        transition: .5s;
     }
 
     /* fin nav */

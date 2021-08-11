@@ -31,9 +31,7 @@ btnCloseMenu.addEventListener('click', () => {
     btnCloseMenu.style.display = "none";
 });
 
-
-
-for(let i = 0 ; i < linkNav.length ; i++){
+for(let i = 0 ; i < linkNav.length-1 ; i++){
     linkNav[i].addEventListener('click', () => {     
         asideMenu.classList.remove('show');
         asideMenu.style.width = '0%';    
