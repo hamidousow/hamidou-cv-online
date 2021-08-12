@@ -41,22 +41,25 @@ body a {
 .dark-mode {
     background: #080808;
     color: var(--text-grey);
+    transition: .9s;
 }
 
 .light-mode {
     background: #dddddd;
     color: var(--text-black);
+    transition: .9s;
 }
 
 .dark-mode #nav-mobile {
-    background: #080808;
-    box-shadow: var(--box-shadow);   
+    background: transparent;
+    transition: .9s;
 }
 
 .light-mode #nav-mobile {
-    background: #dddddd;
-    box-shadow: var(--box-shadow);    
+    background: transparent; 
+    transition: .9s;  
 }
+
 
 .dark-mode #logo-nav {    
     filter: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
@@ -120,11 +123,21 @@ body a {
 
 .btn-change-mode {
     padding: 0.6em 1em;
-    border: 1px solid #dddddd;
-    background: transparent;
     border-radius: 30px;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+.light-mode .btn-change-mode {    
+    border: 1px solid #080808;
+    color: #080808;
+    background: transparent;    
+}
+
+.dark-mode .btn-change-mode {    
+    border: 1px solid #dddddd;
+    color: #dddddd;
+    background: transparent;    
 }
 
 /* end dark mode */
@@ -141,7 +154,6 @@ body a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    transition: .5s;
 }
 
 header {
@@ -559,7 +571,7 @@ footer .container-social {
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 90vh;
+        /*height: 90vh;*/
     }
 
     .formation {
@@ -572,7 +584,7 @@ footer .container-social {
     }
 
     .section-competences, .section-contact {
-        height: 50vh;
+        height: 65vh;
     }    
 
     footer {
