@@ -17,7 +17,8 @@
     --small-text: 11px;
     --letter-space: letter-spacing: 10px;
 
-    --box-shadow:  1px 1px 10px #0c0c0c1e; 
+    --box-shadow:  1px 1px 10px #0c0c0c1e;    
+    --logo-nav: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
 }
 
 * {
@@ -50,8 +51,8 @@ body a {
     --text-grey: #080808;
     --text-black: #dddddd;
     box-shadow: 1px 1px 10px var(--bg-grey);
-    --box-shadow:  1px 1px 10px #00000083;
-    
+    --box-shadow:  1px 1px 10px #00000083;        
+    --logo-nav: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
 
 .btn-change-mode {
@@ -102,8 +103,17 @@ header {
 #logo-nav {
     display: block;
     width: 25px;
-    height: auto;    
+    height: auto; 
+    filter: var(--logo-nav);   
 }
+
+/*.dark-mode #logo-nav {    
+    filter: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
+}
+
+.light-mode #logo-nav {
+    filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
+}*/
 
 .section {
     padding: 4em 2em 0;
