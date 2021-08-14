@@ -3,43 +3,23 @@ const btnCloseMenu = document.querySelector('#btn-close-menu')
 const asideMenu = document.querySelector('#aside-menu');
 const linkNav = document.getElementsByClassName('link-nav');
 
-/* make nav change color when scrolling down
-const navBg = document.getElementById('nav-mobile');
-let lightMode = document.querySelector('.light-mode #nav-mobile');
-let darkMode = document.querySelector('.dark-mode #nav-mobile');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-        lightMode.style.backgroundColor = '#dddddd';
-        lightMode.style.boxShadow = '0px 1px 5px #000000'
-        darkMode.style.backgroundColor = '#080808';       
-    } else {
-        navBg.style.backgroundColor = 'transparent';        
-    }
-});*/
-
-// switch theme variables
-const btnSwitchTheme = document.querySelector('#btn-change-mode');
+// switch theme
+const btnSwitchTheme = document.querySelectorAll('.btn-change-mode');
 const btnSwitchThemeMobile = document.getElementById('btn-change-mode-mbl');
 const body = document.querySelector('#body');
-const containerSite = document.querySelector('.container-site');
+//const containerSite = document.querySelector('.container-site');
 
-btnSwitchTheme.addEventListener('click', () => {    
-    let currentClass = body.className;
-    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-});
-
-// button switch mode on mobile version 
-btnSwitchThemeMobile.addEventListener('click', () => {    
-    let currentClass = body.className;
-    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-});
-
+for( i = 0 ; i < btnSwitchTheme.length ; i++ ) {
+    btnSwitchTheme[i].addEventListener('click', () => {
+        console.log('yes');
+        body.classList.toggle('dark-mode');
+    });
+}
 
 // open and close aside menu on mobile devices 
 btnBurger.addEventListener('click', () => {   
     asideMenu.classList.add('show');    
-    asideMenu.style.width = '70%';
+    asideMenu.style.width = '50%';
     asideMenu.style.transition = '.5s';
     btnBurger.style.display = "none";
     btnCloseMenu.style.display = "flex";       
