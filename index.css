@@ -502,9 +502,10 @@ footer .container-social {
     
     #flex-formation-exp {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        /*height: 90vh;*/
+        flex-direction: row;        
+        padding-top: 6em;
+        justify-content: space-between;
+        
     }
 
     .formation {
@@ -514,6 +515,7 @@ footer .container-social {
     .section-formation, .section-experience {
         justify-content: unset;
         height: auto;
+        width: 47%;
     }
 
     .section-competences, .section-contact {
