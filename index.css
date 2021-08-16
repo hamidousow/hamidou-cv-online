@@ -107,14 +107,6 @@ header {
     filter: var(--logo-nav);   
 }
 
-/*.dark-mode #logo-nav {    
-    filter: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
-}
-
-.light-mode #logo-nav {
-    filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
-}*/
-
 .section {
     padding: 4em 2em 0;
 }
@@ -252,6 +244,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.small-title {
+    color: var(--text-black);
 }
 
 .title-section {    
