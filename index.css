@@ -452,6 +452,14 @@ footer .container-social {
        display: none;
     }
 
+    #flex-formation-exp {
+        padding-top: 6em;
+    }
+
+    .section-formation, .section-experience {
+        height: auto;
+    }
+
     .section-formation .container-paragraphe, .section-experience .container-paragraphe {
         margin-bottom: 2em;
     }
@@ -502,10 +510,8 @@ footer .container-social {
     
     #flex-formation-exp {
         display: flex;
-        flex-direction: row;        
-        padding-top: 6em;
-        justify-content: space-between;
-        
+        flex-direction: row;
+        justify-content: space-between;        
     }
 
     .formation {
