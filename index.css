@@ -28,7 +28,8 @@
 
 body {      
     font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-grey);	
+    background-color: var(--bg-grey);
+    	
 }
 
 body a { 
@@ -53,7 +54,7 @@ body a {
     --text-black: #dddddd;
     box-shadow: 1px 1px 10px var(--bg-grey);
     --box-shadow:  1px 1px 10px #00000083;        
-    --logo-nav: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
+    --logo-nav: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);    
 }
 
 .btn-change-mode {
@@ -63,7 +64,7 @@ body a {
     cursor: pointer;
     border: 1px solid var(--bg-black);
     color: var(--text-black);
-    background: transparent;
+    background: transparent;    
 }
 
 /* end dark mode */
@@ -316,6 +317,7 @@ header {
     bottom: 0;
     height: auto;
     width: 70%;
+    max-width: 245px;
     background: transparent;
 }
 
@@ -449,7 +451,11 @@ footer .container-social {
     .section-hero .right {
         width: 50%;
         height: auto;
-    }    
+    }
+    
+    .profil-picture {
+        max-width: 200px;
+    }
 
     .call-to-action {
        display: none;
@@ -583,8 +589,8 @@ footer .container-social {
 
     .profil-picture {
         right: -7em;
-        min-width: 450px;
-        max-width: 550px;
+        min-width: 350px;
+        max-width: 420px;
     }
 
     .section-hero {
