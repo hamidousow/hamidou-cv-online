@@ -11,6 +11,7 @@
     --text-white: #ffffff;
     --text-orange: #f39200;
     --text-cyan: #30b4dc;
+    --text-purple: #9248cb;
 
     --title-section-size: 1.4em;
     --text-size: 13px;
@@ -98,19 +99,21 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: .9s;
 } 
-
+.navBg {
+    background: var(--bg-grey);
+    box-shadow: var(--box-shadow);    
+}
 #logo-nav {
     display: block;
     width: 25px;
     height: auto; 
     filter: var(--logo-nav);   
 }
-
 .section {
     padding: 4em 2em 0;
 }
-
 #btn-burger {
     width: 35px;
     height: 22px;
@@ -258,7 +261,7 @@ header {
     text-transform: uppercase;
     letter-spacing: .5em;   
     width: fit-content;
-    color: var(--text-cyan);
+    color: var(--text-purple);
 }
 
 .section-hero {
@@ -291,7 +294,7 @@ header {
 
 .typing {
     overflow: hidden;
-    color: var(--text-cyan);
+    color: var(--text-purple);
 }
 
 /* end typing text animation */
@@ -537,7 +540,7 @@ footer .container-social {
     
 
     #nav-mobile {
-        padding: 2em;
+        padding: 1em 2em;
     }
 
     #btn-burger, #btn-close-menu {

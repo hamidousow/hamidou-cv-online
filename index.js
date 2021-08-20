@@ -2,6 +2,7 @@ const btnBurger = document.querySelector('#btn-burger');
 const btnCloseMenu = document.querySelector('#btn-close-menu')
 const asideMenu = document.querySelector('#aside-menu');
 const linkNav = document.getElementsByClassName('link-nav');
+const navBg = document.getElementById('nav-mobile');
 
 // switch theme
 const btnSwitchTheme = document.querySelectorAll('.btn-change-mode');
@@ -44,6 +45,19 @@ for(let j = 0 ; j < linkNav.length ; j++){
         btnCloseMenu.style.display = "none";
     });
 };
+
+// bg-color nav when scroll
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 80) {
+        navBg.classList.add('navBg');
+    } else {
+        navBg.classList.remove('navBg');
+    }
+})
+
+
+
 
 
 
