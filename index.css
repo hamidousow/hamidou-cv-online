@@ -338,7 +338,7 @@ h2 {
     margin-bottom: 3em;
 }
 
-.section-formation .container-paragraphe {
+.section-formation .container-paragraphe, .section-experience .container-paragraphe {
     margin-bottom: 1.5em;
 }
 
