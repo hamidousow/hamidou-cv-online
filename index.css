@@ -29,7 +29,7 @@
 body {      
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-grey);
-    	
+    transition: .9s;    	
 }
 
 body a { 
@@ -269,7 +269,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;  
+    height: 90vh;  
     position: relative; 
     box-shadow: var(--box-shadow);
 }
