@@ -127,9 +127,8 @@ header {
 
 #btn-burger .burger-line {
     width: 30px;
-    height: 5px;
-    border-radius: 10px;
-    border: 1px solid var(--bg-grey);
+    height: 4px;
+    border-radius: 10px; 
 }
 
 #btn-close-menu {
@@ -141,9 +140,8 @@ header {
     align-items: flex-end;
 }
 #btn-close-menu .burger-line { 
-    height: 5px;
+    height: 4px;
     border-radius: 20px;
-    border: 1px solid var(--bg-grey);
 }
 
 #btn-close-menu .burger-line:nth-child(1) {
@@ -269,7 +267,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;  
+    height: 95vh;  
     position: relative; 
     box-shadow: var(--box-shadow);
 }
@@ -326,8 +324,14 @@ header {
     bottom: 2em;
     align-self: center;
     font-size: var(--small-text);
+    color: var(--text-purple);
     letter-spacing: 3px;
     background: transparent;
+}
+
+.call-to-action a {
+    color: var(--text-purple);
+    text-transform: uppercase;
 }
 
 h2 {
@@ -416,6 +420,14 @@ footer .container-social {
     justify-content: space-between;
     width: 50%;
     margin-bottom: 2em;
+}
+
+footer a.text {
+    width: fit-content;
+}
+
+.text > i {
+    margin-right: 15px;
 }
 
 @media screen and (min-width: 568px) {   
