@@ -473,7 +473,7 @@ footer a.text {
        display: none;
     }
 
-    #flex-formation-exp {
+    .flex-section {
         padding-top: 6em;
     }
 
@@ -529,7 +529,7 @@ footer a.text {
         width: 55%;
     } 
     
-    #flex-formation-exp {
+    .flex-section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;        
