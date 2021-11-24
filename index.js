@@ -12,6 +12,7 @@ const body = document.querySelector('#body');
 for( i = 0 ; i < btnSwitchTheme.length ; i++ ) {
     btnSwitchTheme[i].addEventListener('click', () => {
         body.classList.toggle('dark-mode');
+        toggleMenu()
     });
 }
 
@@ -21,7 +22,6 @@ let toggleMenu = () => {
 
 // open and close aside menu on mobile devices 
 btnBurger.addEventListener('click', () => {
-    console.log('yes')
     toggleMenu();
 });
 
