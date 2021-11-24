@@ -338,9 +338,9 @@ header {
     text-transform: uppercase;
 }
 
-h2 {
+/* h2 {
     margin-bottom: 2em;
-}
+} */
 
 .formation {
     margin-bottom: 3em;
@@ -388,7 +388,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: var(--box-shadow);
+    align-items: center;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.card img {
+    display: block;
+    height: 50px;
+    margin-bottom: 1em; 
 }
 
 .skill-icon {
