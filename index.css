@@ -19,7 +19,7 @@
     --letter-space: letter-spacing: 10px;
 
     --box-shadow:  1px 1px 10px #0c0c0c1e;    
-    --logo-nav: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
+    --color-svg: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
 }
 
 html {
@@ -58,7 +58,7 @@ body a {
     --text-black: #dddddd;
     box-shadow: 1px 1px 10px var(--bg-grey);
     --box-shadow:  1px 1px 10px #00000083;        
-    --logo-nav: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);    
+    --color-svg: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);    
 }
 
 .btn-change-mode {
@@ -114,7 +114,7 @@ header {
     display: block;
     width: 25px;
     height: auto; 
-    filter: var(--logo-nav);   
+    filter: var(--color-svg);   
 }
 .section {
     padding: 4em 2em 0;
@@ -172,7 +172,14 @@ header {
     top: 0;    
 	background-color: var(--bg-grey);
 	box-shadow: var(--box-shadow);
-	z-index: 99;   	
+	z-index: 99; 
+    transition: .5s;   	
+}
+
+#aside-menu.show {
+    display: flex;
+	visibility: visible;
+    width: 50%;       
 }
 
 #menu-mobile {
@@ -229,14 +236,6 @@ header {
 
 .container-social img {
 	display: block;	
-}
-
-.show {
-	visibility: visible;   		
-}
-
-.hide {
-	visibility: hidden;    
 }
 
 /* main */
@@ -338,10 +337,6 @@ header {
     text-transform: uppercase;
 }
 
-/* h2 {
-    margin-bottom: 2em;
-} */
-
 .formation {
     margin-bottom: 3em;
 }
@@ -366,8 +361,7 @@ header {
 
 /* compétences */
 
-.section-competences {
-    /*height: 60vh;*/
+.section-competences {    
     flex-direction: column;
 }
 
@@ -382,8 +376,8 @@ header {
 
 .card {
     flex-shrink: 0; /* empeche le retrecissement */
-    height: 165px;
-    width: 165px;    
+    height: 120px;
+    width: 120px;    
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -394,8 +388,14 @@ header {
 
 .card img {
     display: block;
-    height: 50px;
+    height: 35px;
     margin-bottom: 1em; 
+    filter: var(--color-svg);
+}
+
+.card h2 {
+    font-size: clamp(13px, 1.5vw, 16px);
+    color: var(--text-black);
 }
 
 .skill-icon {
