@@ -13,10 +13,11 @@
     --text-cyan: #30b4dc;
     --text-purple: #9248cb;
 
-    --title-section-size: 1.4em;
-    --text-size: 13px;
-    --small-text: 11px;
-    --letter-space: letter-spacing: 10px;
+    --title-section-size: clamp(23px, 4vw, 30px);
+    --text-size: clamp(13px, 2vw, 19px);
+    --big-title-size: clamp(27px, 4vw, 60px);
+    --small-text: clamp(11px, 2vw, 15px);
+    --letter-space: 2px;
 
     --box-shadow:  1px 1px 10px #0c0c0c1e;    
     --color-svg: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
@@ -77,10 +78,6 @@ body a {
     font-family: 'Roboto', sans-serif;
 }
 
-.small-text {
-    font-size: var(--small-text);
-}
-
 .container-site {
     display: flex;
     flex-direction: column;
@@ -120,7 +117,7 @@ header {
     padding: 4em 2em 0;
 }
 #btn-burger {
-    width: 35px;
+    width: auto;
     height: 22px;
     display: flex;
     flex-direction: column;
@@ -130,8 +127,8 @@ header {
 }
 
 #btn-burger .burger-line {
-    width: 30px;
-    height: 4px;
+    width: 40px;
+    height: 2px;
     border-radius: 10px; 
 }
 
@@ -178,8 +175,9 @@ header {
 
 #aside-menu.show {
     display: flex;
+    flex-direction: column;
 	visibility: visible;
-    width: 50%;       
+    width: 55%;       
 }
 
 #menu-mobile {
@@ -188,14 +186,9 @@ header {
 	display: flex;    
     flex-direction: column;
     justify-content: space-around;
-	align-items: flex-end;	 
+	/* align-items: flex-end;	  */
     overflow-x: hidden;
 	white-space: nowrap;
-}
-
-#nav-mobile .link-nav {
-	width: fit-content;
-	width: -moz-fit-content;
 }
 
 .link-nav a {
@@ -203,8 +196,11 @@ header {
 	font-weight: bold;
 	text-decoration: none;
     text-transform: uppercase;
-	font-size: 1em;
-    letter-spacing: 3px;     
+    text-align: left;
+	font-size: var(--text-size);
+    width: fit-content;
+	width: -moz-fit-content;
+    letter-spacing: 2px;     
     display: block;	
 }
 
@@ -216,9 +212,10 @@ header {
 
 .container-social {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 50%;
+	justify-content: flex-end;
+    column-gap: 3em;
+	/* align-items: center; */
+	/* width: 50%; */
 }
 
 .container-social .item {
@@ -253,6 +250,7 @@ header {
 
 .small-title {
     color: var(--text-black);
+    font-size: var(--text-size);    
 }
 
 .title-section {    
@@ -261,7 +259,7 @@ header {
     position: relative;
     padding: 10px 0;
     text-transform: uppercase;
-    letter-spacing: .5em;   
+    letter-spacing: 2px;   
     width: fit-content;
     color: var(--text-purple);
 }
@@ -288,7 +286,7 @@ header {
 /* typing text */ 
 
 .big-title {    
-    font-size: 1.7rem;
+    font-size: var(--big-title-size);
     font-weight: bold;
     text-transform: uppercase;
     color: var(--text-black);
@@ -371,14 +369,14 @@ header {
     flex-wrap: wrap; 
     justify-content: space-around;       
     padding: 1em;   
-    gap: 2em;      
+    /* gap: 2em;*/
 }
 
 .card {
     flex-shrink: 0; /* empeche le retrecissement */
-    height: 120px;
-    width: 120px;    
-    padding: 2em;
+    height: 125px;
+    width: 125px;    
+    padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -499,11 +497,6 @@ footer .container-social {
     .section-formation .container-paragraphe, .section-experience .container-paragraphe {
         margin-bottom: 2em;
     }
-
-    .text {
-        font-size: 1.2em;
-        line-height: 27px;
-    }
     
     footer .container-social {
         width: 25%;
@@ -523,11 +516,6 @@ footer .container-social {
     .section-hero {
         flex-direction: row;
     }
-
-    .big-title {       
-        font-size: 5.1vw;
-        line-height: 1.3em;        
-    } 
 
     .profil-picture {
         right: -2em;
@@ -579,16 +567,18 @@ footer .container-social {
         align-items: center;
     } 
     
-    #aside-menu {
+    #aside-menu, #aside-menu.show {
         display: none;
     }
+
+    
 
     .link-nav a {
         margin-right: 50px;
         font-weight: normal;
         text-decoration: none;
         text-transform: uppercase;        
-        font-size: 1em;
+        /* font-size: var(--text-size); */
         letter-spacing: 3px;
     }
 
