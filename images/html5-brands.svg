@@ -1,1 +1,10 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" class="svg-inline--fa fa-html5 fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="185" height="185" viewBox="0 0 185 185">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_20" data-name="Rectangle 20" width="185" height="185" transform="translate(0.086 -0.276)" fill="#ddd" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="html5-brands" transform="translate(-0.086 0.276)" clip-path="url(#clip-path)">
+    <path id="html5-brands-2" data-name="html5-brands" d="M0,15.857,14.385,179l64.548,21.516L143.893,179,158.279,15.857ZM127.035,68.575H51.276l1.69,20.362h72.38l-5.606,61.168L79.387,161.234v.124h-.453L38.251,150.105l-2.473-31.244H55.439l1.443,15.7,22.052,5.977,22.134-5.977,2.473-25.638H34.747L29.471,48.914h99.378Z" transform="translate(13.19 -15.857)" fill="#ddd"/>
+  </g>
+</svg>
