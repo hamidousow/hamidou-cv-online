@@ -3,13 +3,11 @@
     --bg-grey: #dddddd;    
     --bg-black: #080808;
     --bg-dark-grey: #1f1f1f;  
-    --bg-white: #ffffff;
-    --bg-orange: #f39200;     
+    --bg-white: #ffffff;    
 
     --text-grey: #d5d5d5;    
     --text-black: #080808;
     --text-white: #ffffff;
-    --text-orange: #f39200;
     --text-cyan: #30b4dc;
     --text-purple: #9248cb;
 
@@ -371,8 +369,7 @@ header {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around;       
-    padding: 1em;   
-    /* gap: 2em;*/
+    padding: 1em;
 }
 
 .card {
@@ -471,23 +468,17 @@ footer .container-social {
         min-height: 50vh;
     }
 
-    .section-hero .left {
-        /* height: 30vh; */        
+    .section-hero .left, .section-hero .right  {
         width: 50%;
         height: auto;
-    }
-
-    .section-hero .right {
-        width: 50%;
-        height: auto;
-    }
+    }     
     
     .profil-picture {
         max-width: 200px;
     }
 
     .call-to-action {
-       display: none;
+        display: none;
     }
 
     .flex-section {
@@ -573,17 +564,13 @@ footer .container-social {
     
     #aside-menu, #aside-menu.show {
         display: none;
-    }
-
-    
+    }    
 
     .link-nav a {
         margin-right: 50px;
         font-weight: normal;
         text-decoration: none;
         text-transform: uppercase;        
-        /* font-size: var(--text-size); */
-        letter-spacing: 3px;
     }
 
     #btn-change-mode {
