@@ -213,9 +213,7 @@ header {
 .container-social {
 	display: flex;
 	justify-content: flex-end;
-    column-gap: 3em;
-	/* align-items: center; */
-	/* width: 50%; */
+    column-gap: 3em;	
 }
 
 .container-social .item {
@@ -262,6 +260,7 @@ header {
     letter-spacing: 2px;   
     width: fit-content;
     color: var(--text-purple);
+    margin-bottom: 1em;
 }
 
 .section-hero {
@@ -288,12 +287,16 @@ header {
 .big-title {    
     font-size: var(--big-title-size);
     font-weight: bold;
+    line-height: 110%;
     text-transform: uppercase;
     color: var(--text-black);
 }
 
-.typing {
-    overflow: hidden;
+#hero-section .small-title {
+    margin-bottom: 10px;
+}
+
+#hero-section .big-title {
     color: var(--text-purple);
 }
 
@@ -420,8 +423,8 @@ header {
 }
 
 footer {
-    padding: 4em 2em 1em;
-    height: 50vh;
+    padding: 2em 1em;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
@@ -431,8 +434,8 @@ footer {
 footer .container-social {
     display: flex; 
     justify-content: space-between;
-    width: 50%;
-    margin-bottom: 2em;
+    font-size: 1.4em;
+    width: 50%;    
 }
 
 #contact .text {
@@ -441,6 +444,7 @@ footer .container-social {
 
 .text > i {
     margin-right: 15px;
+    font-size: 1.4em;
 }
 
 @media screen and (min-width: 568px) {   
@@ -460,11 +464,11 @@ footer .container-social {
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
-        height: 50vh;       
+        min-height: 50vh;       
     }
 
     .section-introduction {
-        height: 50vh;
+        min-height: 50vh;
     }
 
     .section-hero .left {
@@ -593,6 +597,11 @@ footer .container-social {
 
     /* fin nav */
 
+    .containerCards {
+        margin: auto;
+        max-width: 1000px;
+    }
+
     .section {        
         padding: 3em 7em 0;
     }
@@ -604,7 +613,7 @@ footer .container-social {
     }
 
     .section-hero {
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
