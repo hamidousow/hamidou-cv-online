@@ -1,12 +1,22 @@
 
 :root {
-    --bg-grey: #dddddd;    
-    --bg-black: #080808;
+    /* dark mode */
+    --bg-grey: #080808;
+    --bg-black: #dddddd;
+    --text-grey: #080808;
+    --text-black: #dddddd;
+    box-shadow: 1px 1px 10px var(--bg-grey);
+    --box-shadow:  1px 1px 10px #00000083;        
+    --color-svg: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
+    /* end dark mode */
+
+        
+    
     --bg-dark-grey: #1f1f1f;  
     --bg-white: #ffffff;    
 
-    --text-grey: #d5d5d5;    
-    --text-black: #080808;
+        
+    
     --text-white: #ffffff;
     --text-cyan: #30b4dc;
     --text-purple: #9248cb;
@@ -17,8 +27,8 @@
     --small-text: clamp(11px, 2vw, 15px);
     --letter-space: 2px;
 
-    --box-shadow:  1px 1px 10px #0c0c0c1e;    
-    --color-svg: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
+        
+    
 }
 
 html {
@@ -48,16 +58,14 @@ body a {
     background: var(--bg-black);
 }
 
-/* dark mode */
-
+/* change dark mode to light mode */
 .dark-mode {
-    --bg-grey: #080808;
-    --bg-black: #dddddd;
-    --text-grey: #080808;
-    --text-black: #dddddd;
-    box-shadow: 1px 1px 10px var(--bg-grey);
-    --box-shadow:  1px 1px 10px #00000083;        
-    --color-svg: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);    
+    --bg-grey: #dddddd;
+    --bg-black: #080808;
+    --text-grey: #d5d5d5;
+    --text-black: #080808;
+    --box-shadow:  1px 1px 10px #0c0c0c1e;
+    --color-svg: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
 }
 
 .btn-change-mode {
